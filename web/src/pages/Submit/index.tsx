@@ -1,10 +1,28 @@
 import { FormEvent } from "react";
+import { toast } from "@src/lib/react-toastify";
 import { Button } from "../../components/Button";
 import styles from "./styles.module.css";
+import JokeService from "@src/services/JokeService";
+import { useNavigate } from "react-router";
 
 export function Submit() {
+  const navigate = useNavigate();
+
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+
+    try {
+      const formData = new FormData(event.currentTarget);
+      const joke = formData.get("joke") as string;
+
+      await JokeService.createJoke({ joke });
+
+      toast("Joke successfully submitted", { type: "success" });
+    } catch {
+      toast("Failed to submit joke", { type: "error" });
+    } finally {
+      navigate("/search");
+    }
   }
 
   return (

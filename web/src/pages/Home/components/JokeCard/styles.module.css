@@ -1,0 +1,45 @@
+/* joke card styles */
+.card {
+  background-color: var(--gray-900);
+  box-shadow: 0 2px 3px var(--gray-600), 0 0 0 1px var(--gray-600);
+  max-width: 100%;
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.cardFooter {
+  border-top: 1px solid var(--gray-600);
+  align-items: stretch;
+  display: flex;
+}
+
+.cardFooter a {
+  align-items: center;
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: 0.75rem;
+
+  border-right: 1px solid var(--gray-600);
+
+  color: var(--green-200);
+  cursor: pointer;
+  text-decoration: none;
+  transition: none 86ms ease-out;
+}
+
+.cardFooter a svg {
+  margin-right: 0.5rem;
+}
+
+.cardFooter a:hover {
+  opacity: 0.7;
+}
+
+.cardFooter a:active {
+  opacity: 0.7;
+}
