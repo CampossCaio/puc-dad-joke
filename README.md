@@ -11,7 +11,16 @@ PUC DAD JOKES é uma aplicação onde é possível adicionar piadas, gerar piada
 
 ## Como Rodar o Projeto
 
-### 1. Executando o Backend
+### 1. Clonar o Repositório
+
+Primeiro, clone o repositório do projeto:
+
+```bash
+git clone https://github.com/CampossCaio/puc-dad-joke.git
+cd puc-dad-joke
+```
+
+### 2. Executando o Backend
 
 1. Acesse a pasta da API:
    ```sh
@@ -35,7 +44,7 @@ PUC DAD JOKES é uma aplicação onde é possível adicionar piadas, gerar piada
    ```
    O backend estará rodando em: `http://localhost:3333`
 
-### 2. Executando o Frontend
+### 3. Executando o Frontend
 
 1. Acesse a pasta do frontend:
    ```sh
