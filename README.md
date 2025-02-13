@@ -1,4 +1,4 @@
-# PUC DAD JOKES
+# PUC DAD JOKE
 
 PUC DAD JOKES é uma aplicação onde é possível adicionar piadas, gerar piadas aleatórias e buscar por piadas cadastradas. O projeto é dividido em duas partes: web desenvolvida com React e uma api construído com Node.js.
 
