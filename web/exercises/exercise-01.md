@@ -1,4 +1,4 @@
-# Exercício 1: Comunicação entre Componentes, SPA, React Router e Integração com APIs
+# Exercício 1: Comunicação entre Componentes, React Router e Integração com APIs
 
 ## Introdução
 
