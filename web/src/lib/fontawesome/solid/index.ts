@@ -5,6 +5,7 @@ import {
   faCopy,
   faShareFromSquare,
   faCheck,
+  faSpinner,
 } from "@fortawesome/free-solid-svg-icons";
 
 export {
@@ -14,4 +15,5 @@ export {
   faCopy,
   faShareFromSquare,
   faCheck,
+  faSpinner,
 };

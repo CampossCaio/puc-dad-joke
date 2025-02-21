@@ -38,3 +38,15 @@
   color: var(--white);
   border-bottom: 1px solid var(--green-200);
 }
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+
+  cursor: pointer;
+}

@@ -23,6 +23,10 @@
   border: 1px solid var(--gray-400);
 }
 
+.tertiary {
+  background: transparent;
+}
+
 .button:hover {
   opacity: 0.8;
 }

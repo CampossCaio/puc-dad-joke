@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "tertiary";
 };
 
 export function Button({
