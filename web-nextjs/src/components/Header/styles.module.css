@@ -1,0 +1,52 @@
+.header {
+  height: 3.25rem;
+  background: var(--gray-800);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links svg {
+  height: 14px;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: var(--gray-300);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s, text-decoration 0.2s;
+  padding: 1.125rem 0;
+  border-bottom: 1px solid transparent;
+}
+
+.links a.active {
+  color: var(--white);
+  border-bottom: 1px solid var(--green-200);
+}
+
+.links a:hover {
+  color: var(--white);
+  border-bottom: 1px solid var(--green-200);
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+
+  cursor: pointer;
+}

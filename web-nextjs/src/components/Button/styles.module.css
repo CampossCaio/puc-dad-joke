@@ -1,0 +1,32 @@
+.button {
+  color: var(--white);
+  border-color: transparent;
+  border-radius: 3px;
+  padding: 5px 12px;
+  font-size: 1rem;
+  height: 2.25em;
+  display: block;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.primary {
+  background: var(--green-400);
+}
+
+.secondary {
+  background: var(--gray-800);
+  color: var(--gray-300);
+  border: 1px solid var(--gray-600);
+}
+.secondary:hover {
+  border: 1px solid var(--gray-400);
+}
+
+.tertiary {
+  background: transparent;
+}
+
+.button:hover {
+  opacity: 0.8;
+}

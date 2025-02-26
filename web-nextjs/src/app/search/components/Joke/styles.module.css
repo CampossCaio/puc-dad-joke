@@ -1,0 +1,12 @@
+.joke {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: var(--gray-900);
+  border: 1px solid #3d444db3;
+}
+
+.joke svg {
+  margin-right: 8px;
+}

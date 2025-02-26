@@ -1,0 +1,16 @@
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.heading h1 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+.container {
+  padding: 3.125rem 1.5rem;
+}
