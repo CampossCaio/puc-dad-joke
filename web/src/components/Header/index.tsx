@@ -12,13 +12,13 @@ import Tooltip from "../Tooltip";
 
 import { getInitialsFrom } from "@src/utils";
 
-//import { useAuthWithContext } from "@src/hooks/useAuthWithContext";
-import { useAuthWithRedux } from "@src/hooks/useAuthwithRedux";
+import { useAuthWithContext } from "@src/hooks/useAuthWithContext";
+//import { useAuthWithRedux } from "@src/hooks/useAuthwithRedux";
 
 export const Header = () => {
   const navigate = useNavigate();
-  //const { user } = useAuthWithContext();
-  const { user } = useAuthWithRedux();
+  const { user } = useAuthWithContext();
+  //const { user } = useAuthWithRedux();
 
   return (
     <header className={styles.header}>

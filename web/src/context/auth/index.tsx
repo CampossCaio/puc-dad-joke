@@ -13,7 +13,11 @@ type AuthContextProps = {
 export const AuthContext = createContext({} as AuthContextProps);
 
 export function AuthProvider({ children }: AuthProviderProps) {
-  const [user, setUser] = useState<User | null>(null);
+  const [user, setUser] = useState<User | null>({
+    name: "Caio Campos",
+    id: "1",
+    token: "",
+  });
 
   const signin = async ({ email, password }: SignInParams) => {
     const user = await AuthService.signin({ email, password });

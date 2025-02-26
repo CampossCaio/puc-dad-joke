@@ -23,14 +23,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="search" element={<Search />} />
-        <Route
-          path="submit"
-          element={
-            <RequireAuth>
-              <Submit />
-            </RequireAuth>
-          }
-        />
+        <Route path="submit" element={<Submit />} />
         <Route path="*" element={<NoMatch />} />
       </Route>
 

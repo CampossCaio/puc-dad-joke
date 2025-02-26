@@ -9,6 +9,7 @@ import "./global.css";
 import { ErrorBoundary } from "@src/components/ErrorBoundary";
 import { AuthProvider } from "./context/auth/index.tsx";
 import { store } from "@src/store/config.ts";
+import { ReactQueryProvider } from "./lib/react-query/index.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -16,9 +17,11 @@ createRoot(document.getElementById("root")!).render(
       <ToastContainer theme="dark" autoClose={2000} />
       <BrowserRouter>
         <ReduxProvider store={store}>
-          <AuthProvider>
-            <App />
-          </AuthProvider>
+          <ReactQueryProvider>
+            <AuthProvider>
+              <App />
+            </AuthProvider>
+          </ReactQueryProvider>
         </ReduxProvider>
       </BrowserRouter>
     </ErrorBoundary>
