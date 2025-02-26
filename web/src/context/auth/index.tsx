@@ -13,14 +13,12 @@ type AuthContextProps = {
 export const AuthContext = createContext({} as AuthContextProps);
 
 export function AuthProvider({ children }: AuthProviderProps) {
-  const [user, setUser] = useState<User | null>(null);
+  // Adicione o restante do código para que seja possível disponibilizar uma função
+  // de login e o usuário para o contexto de autenticação
 
-  const signin = async ({ email, password }: SignInParams) => {
-    const user = await AuthService.signin({ email, password });
-    setUser(user);
-  };
-
-  const value = { user, signin };
-
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider value={{} as AuthContextProps}>
+      {children}
+    </AuthContext.Provider>
+  );
 }

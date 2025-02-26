@@ -1,12 +1,15 @@
 import { ReactNode } from "react";
 import { Navigate } from "react-router";
-// import { useAuthWithContext } from "./hooks/useAuthWithContext";
-import { useAuthWithRedux } from "./hooks/useAuthwithRedux";
 
-export function RequireAuth({ children }: { children: ReactNode }) {
-  // const { user } = useAuthWithContext();
-  const { user } = useAuthWithRedux();
+import { User } from "./services/AuthService";
 
+export function RequireAuth({
+  children,
+  user,
+}: {
+  children: ReactNode;
+  user: User | null;
+}) {
   if (!user) {
     return <Navigate to="/" replace />;
   }

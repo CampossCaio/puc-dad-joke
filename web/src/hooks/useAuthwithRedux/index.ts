@@ -3,10 +3,8 @@ import { addUser, selectUser } from "@src/slices/user";
 import { useDispatch, useSelector } from "react-redux";
 
 export function useAuthWithRedux() {
-  const user = useSelector(selectUser);
+  const user = {}; // Obtenha o usuário autenticado utilizando o hook useSelector.
   const dispatch = useDispatch();
-
-  console.log(user);
 
   async function signin({
     email,
@@ -16,7 +14,7 @@ export function useAuthWithRedux() {
     password: string;
   }) {
     const authenticatedUser = await AuthService.signin({ email, password });
-    dispatch(addUser(authenticatedUser));
+    // Adicione o usuário autenticado ao estado global  utilizando o dispatch a e action addUser
   }
 
   return { signin, user };

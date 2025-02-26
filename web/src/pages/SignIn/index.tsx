@@ -8,14 +8,11 @@ import { faSpinner } from "../../lib/fontawesome/solid";
 
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router";
-// import { useAuthWithContext } from "@src/hooks/useAuthWithContext";
-import { useAuthWithRedux } from "@src/hooks/useAuthwithRedux";
 
-export function SignIn() {
+import AuthService, { User } from "@src/services/AuthService";
+
+export function SignIn({ setUser }: { setUser: (user: User) => void }) {
   const [loading, setLoading] = useState(false);
-
-  // const { signin } = useAuthWithContext();
-  const { signin } = useAuthWithRedux();
 
   const navigate = useNavigate();
 
@@ -31,7 +28,9 @@ export function SignIn() {
         password: formData.get("password") as string,
       };
 
-      signin(user);
+      const authenticatedUser = await AuthService.signin(user);
+
+      setUser(authenticatedUser);
       navigate("/");
     } catch {
       toast("Invalid email or password", { type: "error" });
