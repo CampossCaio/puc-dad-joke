@@ -52,7 +52,9 @@ export const Header = () => {
 
         {user ? (
           <Tooltip text={user.name}>
-            <div className={styles.avatar}>{getInitialsFrom(user.name)}</div>
+            <div data-testid="avatar" className={styles.avatar}>
+              {getInitialsFrom(user.name)}
+            </div>
           </Tooltip>
         ) : (
           <Tooltip text="Sign in to submit new jokes">

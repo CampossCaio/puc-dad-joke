@@ -12,7 +12,7 @@ export function Joke({ text }: JokeProps) {
   const { copied, copyTextToClipboard } = useCopyText();
 
   return (
-    <div className={styles.joke}>
+    <div data-testid="joke" className={styles.joke}>
       <p>{text}</p>
       <Button variant="secondary" onClick={() => copyTextToClipboard(text)}>
         <FontAwesomeIcon icon={copied ? faCheck : faCopy} />

@@ -1,0 +1,35 @@
+{
+  "jokes": [
+    {
+      "id": "3808c6f0-5958-49bc-97ac-e2c27f9199f6",
+      "text": "How did I know my girlfriend thought I was invading her privacy? She wrote about it in her diary.",
+      "created_at": 1739408214807,
+      "updated_at": 1739408214807
+    },
+    {
+      "id": "595bd949-407e-4a2b-ae26-f882e5cbbb69",
+      "text": "Why did the electric car feel discriminated against? Because the rules weren't current.",
+      "created_at": 1739408214807,
+      "updated_at": 1739408214807
+    },
+    {
+      "id": "1da24ff9-702d-4c03-9a11-cc6a1da1c99c",
+      "text": "I'm such a good navigator, a self-driving car once asked me for directions.",
+      "created_at": 1739408214807,
+      "updated_at": 1739408214807
+    },
+    {
+      "id": "3e072ed5-9af3-466e-9a33-bcfb38844c1e",
+      "text": "Why do melons have weddings? They cantelope.",
+      "created_at": 1739408214807,
+      "updated_at": 1739408214807
+    },
+    {
+      "id": "026c674a-49e0-4555-92e0-08c424221a69",
+      "text": "What did the bison say to his son when he left the ranch? Bi-son.",
+      "created_at": 1739408214807,
+      "updated_at": 1739408214807
+    }
+  ],
+  "totalOfItems": 5
+}

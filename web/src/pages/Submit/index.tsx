@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 import { useNavigate } from "react-router";
 import { useJokes } from "@src/hooks/useJokes";
 
-export function Submit() {
+export default function Submit() {
   const navigate = useNavigate();
 
   const { createJokeMutation } = useJokes();

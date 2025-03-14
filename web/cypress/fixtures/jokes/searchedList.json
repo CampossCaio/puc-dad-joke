@@ -1,0 +1,18 @@
+{
+  "jokes": [
+    {
+      "id": "595bd949-407e-4a2b-ae26-f882e5cbbb69",
+      "text": "Why did the electric car feel discriminated against? Because the rules weren't current.",
+      "created_at": 1739408214807,
+      "updated_at": 1739408214807
+    },
+
+    {
+      "id": "3e072ed5-9af3-466e-9a33-bcfb38844c1e",
+      "text": "Why do melons have weddings? They cantelope.",
+      "created_at": 1739408214807,
+      "updated_at": 1739408214807
+    }
+  ],
+  "totalOfItems": 2
+}
